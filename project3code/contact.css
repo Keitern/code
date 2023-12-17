@@ -1,0 +1,402 @@
+
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* always go from top to bottom */
+    
+}
+
+p{
+    line-height: 1.5;
+    
+}
+
+
+
+img{
+    width:100%;
+    height:auto;
+   
+}
+
+.boxforimg img{
+    display:flex;
+    justify-content: center;
+    padding:50px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo > h2{
+    font-size: small;
+}
+
+.logo > img{
+    height:50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+nav {
+    height: 64px;
+    width: 100%;
+    background: #141414;
+    color: #f2f2f2;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px 27px 16px 28px;
+}
+
+.nav-items{
+    color:#f2f2f2;
+    padding:10px ; 
+    display: none;
+
+}
+
+.backdrop{
+    display:none;
+}
+
+.namebox {
+    width: 100%;
+    height: 110px;
+    background: #485640;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.namebox > h2{
+    color: #f2f2f2;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #485640;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 52px 89px 52px;
+
+
+}
+
+.footerstuff{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerdesktop{
+    display: none;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+#some {
+    
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+    height:50px;
+    flex-wrap: nowrap;
+   
+}
+
+body{
+    background-image: url(z.eksamenbilled/contact.jpeg);
+    background-size: cover;
+}
+
+/* MOBILE NAV STUFF */
+
+.navmobile{
+    width: 100%;
+    height: 120px;
+    background-color: #141414;
+    padding: 40px 27px 40px 28px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    font-size: x-large;
+}
+
+.menu-btn {
+    display: block;
+    float: right;
+    color:#f2f2f2;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+}
+
+
+#click{
+    display: none;
+}
+
+.navmobile > ul {
+    position: fixed;
+    top: 120px;
+    right: -100%;
+    background-color: #141414;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    transition: all 0.25s ease-out;
+    list-style: none;
+}
+
+#click:checked ~ ul{
+    right: 0%;
+}
+
+.navmobile > ul > li{
+    margin:40px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+nav {
+    display:none;
+}
+
+/* CONTACT CLASSES */
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: proxima-nova, sans-serif;
+  }
+  
+  input[type=submit] {
+    background-color: #485640;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgba(98, 115, 142, 85%);
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: rgba(20, 20, 20, 60%);
+    padding: 20px;
+    color:#ECECEC;
+  }
+
+  #fname {
+    color:#ECECEC;
+    background-color: rgba(242, 242, 242, 10%);
+  }
+  #lname {
+    color:#ECECEC;
+    background-color: rgba(242, 242, 242, 10%);
+  }
+  #Phone_Number {
+    color:#ECECEC;
+    background-color: rgba(242, 242, 242, 10%);
+  }
+  #E-mail_Address {
+    color:#ECECEC;
+    background-color: rgba(242, 242, 242, 10%);
+  }
+  #subject {
+    color:#ECECEC;
+    background-color: rgba(242, 242, 242, 10%);
+  }
+
+  .desktopcontact img{
+    display:none;
+  }
+
+  .desktopcontact{
+    font-family: proxima-nova, sans-serif;
+    text-decoration: none;
+  }
+
+@media only screen and (min-width:1000px){
+
+
+    /* new rules for imgs */
+        img{
+            width:100%;
+            height:100%;
+        }
+    
+        .navmobile{
+            display:none;
+        }
+    
+        nav {
+            height: 64px;
+            width: 100%;
+            background: #141414;
+            color: #f2f2f2;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 16px 27px 16px 28px;
+        }
+    
+    /* Navigation top bar stuff */
+        .logo {
+            display:flex;
+            flex-direction: row;
+            width:100%;
+            height: 100%;
+            gap:20px;
+        }
+    
+        .logo > h2{
+            font-size:large;
+        }
+    
+        .logo > img{
+            display:flex;
+    
+        }
+        .menubutton{
+            display:none;
+        }
+    
+        .nav-items{
+            width: 100%;
+            display:flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    
+        #homebutton{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #141414;
+            height: 65px;
+            width:150px
+        }
+        #homebutton:hover{
+            opacity: 75%;
+            background-color: #485640;
+    
+        }
+    
+        #workbutton{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #141414;
+            height: 65px;
+            width:150px
+        }
+        #workbutton:hover{
+            opacity: 75%;
+            background-color: #485640;
+        }
+    
+        #aboutbutton{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #141414;
+            height: 65px;
+            width:150px
+        }
+        #aboutbutton:hover{
+            opacity: 75%;
+            background-color: #485640;
+        }
+    
+        #contactbutton{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #141414;
+            height: 65px;
+            width:150px
+        }
+        #contactbutton:hover{
+            opacity: 75%;
+            background-color: #485640;
+        }
+    
+        .backdrop{
+            display: flex;
+            width: 100%;
+            height: 250px;
+        }
+
+        .namebox {
+            height: 130px;
+        }
+
+        nav > a{
+            width:100%;
+        }
+        
+
+        /* Adding contact to footer for desktop */
+        .footerdesktop{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        #footercontact{
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            text-align: center;
+        }
+
+
+        .desktopcontact{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            padding-left: 50px;
+
+        }
+
+        .desktopcontact img {
+            width: 80%;
+            height:auto;
+            display:flex;
+            order:1;
+            padding: 50px 0px;
+        }
+
+        .desktopcontact > .container{
+            width:100%;
+            height:auto;
+            order:-1;
+            padding: 80px;
+        }
+}
